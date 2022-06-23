@@ -19,8 +19,7 @@ function editCost(str1,str2,ac,dc,rc){
 	for(let i=1;i<m;i++){
 		for(let j=1;j<n;j++){
 			dp[i][j] = dp[i-1][j-1]+(str1[i-1]==str2[j-1]?0:rc)//当前替换代价
-			dp[i][j] = Math.min(dp[i][j],dp[i][j-1]+ac)
-			dp[i][j] = Math.min(dp[i][j],dp[i-1][j]+dc)
+			dp[i][j] = Math.min(dp[i][j],dp[i][j-1]+ac,dp[i-1][j]+dc)
 		}
 	}
 	return dp[m-1][n-1]
