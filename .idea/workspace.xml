@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab7ff364-ba8b-4157-a52e-77882fff578f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/views/ceshi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/两个鸡蛋.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/修复IP地址.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/司机工资和最高.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/字符串.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/换钱币.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/替换后最长重复.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/字符交换位置.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/字符交换位置.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/数组字符串的处理.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/数组字符串的处理.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +108,7 @@
       <workItem from="1656034395921" duration="540000" />
       <workItem from="1656038108282" duration="6411000" />
       <workItem from="1656084834595" duration="36208000" />
-      <workItem from="1656178943784" duration="22329000" />
+      <workItem from="1656178943784" duration="23188000" />
     </task>
     <servers />
   </component>
