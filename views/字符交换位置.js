@@ -6,7 +6,7 @@ minSteps2(line) {
 		let arr = line.split('')
 		let step1 = 0;
 		let step2 = 0;
-		let gi = 0;
+		let gi = 0;//最后一个g 所在的位置
 		let bi = 0;
 		for (let i = 0; i < str.length; i++) {
 			if (str[i] == 'G') { // 当前的G，去左边   方案1

@@ -2,35 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab7ff364-ba8b-4157-a52e-77882fff578f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/购物单.js" />
+      <change afterPath="$PROJECT_DIR$/views/ceshi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/两个鸡蛋.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/修复IP地址.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/司机工资和最高.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/字符串.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/换钱币.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/字符交换位置.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/字符交换位置.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/数组字符串的处理.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/数组字符串的处理.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="购物单.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/购物单.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-468">
-              <caret line="46" column="53" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package.json" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -60,6 +50,7 @@
     <option name="width" value="1620" />
     <option name="height" value="974" />
   </component>
+  <component name="ProjectId" id="2B0E1zEBf3ZEbdxlvfM5t4OZuSi" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -95,27 +86,19 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -129,6 +112,10 @@
       <workItem from="1655983805997" duration="38000" />
       <workItem from="1655983923000" duration="103000" />
       <workItem from="1655984033414" duration="289000" />
+      <workItem from="1656034395921" duration="540000" />
+      <workItem from="1656038108282" duration="6411000" />
+      <workItem from="1656084834595" duration="36208000" />
+      <workItem from="1656178943784" duration="22329000" />
     </task>
     <servers />
   </component>
@@ -158,14 +145,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/购物单.js">

@@ -1,4 +1,8 @@
-//====全组合(有/无重复皆可)=======
+//====连续的子集 字符串(有/无重复皆可)=======
+// a ab abc b bc c
+// let arr =['a','b','c']
+// let len = arr.length
+let outList = []
 function zuhe(arr) {
 	for (let i = 0; i < arr.length; i++) {
 		let cur = arr[i]
@@ -13,14 +17,39 @@ function zuhe(arr) {
 	}
 	console.log(outList)
 }
-zuhe(arr)
-
+// zuhe(arr)
+//====连续的子集 数组(有/无重复皆可)=======
+/**
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
+var subsets = function(nums) {
+	let ans = []
+	ziji(nums)
+	function ziji(arr){
+		for(let i =0;i<arr.length;i++){
+			let cur = arr[i]
+			let path = [].concat(cur)
+			ans.push(path)
+			let newArr = [].concat(path)
+			for(let j=i+1;j<arr.length;j++){
+				newArr.push(arr[j])
+				ans.push(newArr)
+			}
+		}
+	}
+	ans.unshift([])
+	return ans
+};
+// subsets([1,2,3])
 
 
 
 //===全排列(有/无重复皆可)=====
-let len = arr.length
-
+//abc acb bac bca cab cba
+// let arr =['a','b','c']
+// let len = arr.length
+// let outList = []
 function pailie(iArr, outStr) {
 	if (outStr.length == len) {
 		if (outList.indexOf(outStr) == -1) {
@@ -36,52 +65,84 @@ function pailie(iArr, outStr) {
 		}
 	}
 }
-pailie(arr, '')
+// pailie(arr, '')
 console.log(outList)
 
 
+//全组合 字符串
+let data = ['a','b','c'];
+let outlist =[]
 
-//字符串压缩
-function yasuo(strs) {
-	let pre = strs[0];
-	let curNum = 1
-	let res = ''
-	for (let i = 1; i < strs.length; i++) {
-		const str = strs[i]
-		if (str === pre) {
-			curNum++
-		} else {
-			res += pre
-			res += curNum
-			pre = str
-			curNum = 1
+function getGroup(data, index, outlist) {
+	let arr =[]
+	let cur = data[index]
+	arr.push(cur);
+	for(let i = 0; i < outlist.length; i++) {
+		arr.push(outlist[i] + cur);
+	}
+	// push.apply合并数组是把后一个数组的值依次push进前一个数组，使前一个数组发生改变，并且只能两个数组之间发生合并
+	outlist = [...outlist,...arr]
+	// outlist.push.apply(outlist, arr);===outlist = [...outlist,...arr]
+	if(index + 1 >= data.length) return outlist;
+	else return getGroup(data, index + 1, outlist);
+}
+// ======二维数组去重
+// let aa = [[1, 2], [2, 3], [1, 2]]
+// let obj = {};
+// aa.forEach(item => obj[item] = item);
+// aa = Object.values(obj);
+// console.log(aa);
+// [[1, 2]
+//  [2, 3]]
+
+// console.log(getGroup(data,0,outlist))
+// 数组的全组合
+//[
+//   [], [ 1 ],[ 1, 2 ], [ 1, 2, 3 ],[ 1, 3 ], [ 2 ], [ 2, 3 ], [ 3 ]
+// ]
+var subsets = function(nums) {
+	let ans = []
+	ziji(0,[])
+	function ziji(index,path){
+		ans.push([...path])
+		for(let i = index;i<nums.length;i++){
+			path.push(nums[i])
+			ziji(i+1,path)
+			path.pop()
 		}
 	}
-	res += pre
-	res += curNum
-	return res.length > strs.length ? strs : res
-}
-console.log(yasuo('aaaaaabbbbbccccaa'))
-//字符串解压
-function jieya(str) {
-	let numStack = [];
-	let strStack = [];
-	let num = 0
-	let result = ''
-	for (let char of str) {
-		if (/\d/.test(char)) {
-			num = num * 10 + Number(char)
-		} else if (char == '[') {
-			strStack.push(result)
-			result = ''
-			numStack.push(num)
-			num = 0
-		} else if (char == ']') {
-			let repeatTimes = numStack.pop()
-			result = strStack.pop() + result.repeat(repeatTimes)
-		} else {
-			result = result + char
-		}
-	}
-	return result
-}
+	return ans
+};
+subsets([1,2,3])
+/**
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
+var subsetsWithDup = function (nums) {
+	// 先排序
+	nums.sort((a, b) => a - b);
+	const res = [];
+	const backtrack = (index, path, isChoosePre) => {
+		if (index == nums.length) return res.push(path.slice());
+		/* 这句话要放在判断 isChoosePre 前面
+        不选择当前的数字 */
+		backtrack(index + 1, path, false);
+		// 如果上一个数没有选择，并且上一个数和当前数字相同则跳过，如果不跳过的话就会出现重复
+		if (!isChoosePre && nums[index - 1] === nums[index]) return;
+		// 加入路径中
+		path.push(nums[index]);
+		// 选择当前的数字
+		backtrack(index + 1, path, true);
+		// 递归完成后，回退回原状态  撤销选择
+		path.pop();
+	};
+	// 没有选择上一个元素，从第0个元素开始做选择
+	backtrack(0, [], false);
+	return res;
+};
+
+
+
+
+
+
