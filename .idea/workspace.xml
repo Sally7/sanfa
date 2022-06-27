@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab7ff364-ba8b-4157-a52e-77882fff578f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/views/dfs-坏橘子.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/dfs-大西洋.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/堆栈-书本叠加.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/堆栈-逆波兰.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/密码截取.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/放苹果.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/最长公共子.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/正则.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/走格子的方案数.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/dfs-素数伴侣.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/z.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/岛屿周长.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/排序.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/高位精度计算.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/两个鸡蛋.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/dp-两个鸡蛋.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/修复IP地址.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/dp-修复IP地址.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/司机工资和最高.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/24点算法.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/司机最高收入.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/dp-司机最高收入.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/字符交换位置.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/字符交换位置.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/换钱币.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/dp-换钱币.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/最短编辑距离.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/dp-最短编辑距离.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/放苹果.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/放苹果.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/正则.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/正则.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +115,9 @@
       <workItem from="1656038108282" duration="6411000" />
       <workItem from="1656084834595" duration="36208000" />
       <workItem from="1656178943784" duration="27168000" />
-      <workItem from="1656291959088" duration="5631000" />
+      <workItem from="1656291959088" duration="6010000" />
+      <workItem from="1656308845024" duration="1102000" />
+      <workItem from="1656310126057" duration="17222000" />
     </task>
     <servers />
   </component>
