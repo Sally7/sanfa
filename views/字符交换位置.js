@@ -1,5 +1,5 @@
 let line ='BBGGBBBGG'
-minSteps2(line) {
+function minSteps2(line) {
 		if (!line) {
 			return 0;
 		}
