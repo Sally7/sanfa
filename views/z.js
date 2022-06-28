@@ -1,22 +1,64 @@
-let arr = [20867,25786,13932,11112,18239,25481,2607,8855,9788,28461,27950,9814]
+let str = '25606 9056 17585 9754 29060 978 3156 9997 13286 3419 18853 5325 1580 292 24811 943 18898 6507 6270 7296 15538 20251 28206 10001 818 3953 993 15744 8489 20700 18853 24969'
+let arr = str.split(' ')
+// arr.sort()
+// let used = new Array(arr1.length).fill([]).map(() => new Array(arr2.length).fill(0))
 let arr1 = arr.filter((item)=>{return item%2 ==0})//偶数
 let arr2 = arr.filter((item)=>{return item%2 !=0})
-let used = new Array(arr1.length).fill([]).map(() => new Array(arr2.length).fill(0))
+
 let max = 0
 let k= 0
-dp(arr1,arr2)
-function dp(arr1,arr2){
+let oArr =new Array(arr1.length).fill(0)
+let jArr =new Array(arr2.length).fill(0)
+let use =[]
+doSum(arr1,arr2)
+function doSum(arr1,arr2){
     for(let i=0;i<arr1.length;i++){
         for(let j=0;j<arr2.length;j++){
-            let sum = arr1[i]+arr2[j]
+            let sum = Number(arr1[i])+Number(arr2[j])
             if(isSu(sum)){
-                used[i][j] =1
+                // used[i][j] =1
+                use.push([i,j])
             }
         }
     }
-    console.log(used)
-    findMax(used)
+    console.log(dp(0,0,oArr,jArr))
+
 }
+function dp(i,count,oArr,jArr,type){
+    if(i>=Math.max(use.length,arr1.length)){
+        max = Math.max(count,max)
+        return max
+    }else{
+        let o = use[i][0]
+        let j = use[i][1]
+        console.log(i,o,j,oArr,jArr)
+        let oArr2=[].concat(oArr)
+        let jArr2=[].concat(jArr)
+        if(!oArr[o]&&!jArr[j]){
+            oArr2[o]=1
+            jArr2[j]=1
+        }
+        return Math.max(dp(i+1,count+1,oArr2,jArr2,),dp(i+1,count,oArr,jArr,))
+    }
+}
+function isSu(num) {
+    let suArr = [];
+    for (let i = 2; i * i <= num; i++) {
+        while (num % i == 0) {
+            suArr.push(i);
+            num = num / i;
+        }
+    }
+    if(num==0){
+        return false
+    }
+    return suArr.length==0;
+}
+
+
+
+//求矩阵对角线
+// findMax(used)
 function findMax(used){
     while (k<used.length){//arr1 或 2小的长度
         let count1 =0,count2=0,count3 =0,count4=0
@@ -41,16 +83,3 @@ function findMax(used){
     console.log(max)
 }
 
-function isSu(num) {
-    let suArr = [];
-    for (let i = 2; i * i <= num; i++) {
-        while (num % i == 0) {
-            suArr.push(i);
-            num = num / i;
-        }
-    }
-    if(num==0){
-        return false
-    }
-    return suArr.length==0;
-}

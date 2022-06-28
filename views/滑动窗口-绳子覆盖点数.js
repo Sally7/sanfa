@@ -1,6 +1,6 @@
 let  arr =[5,7,13,19]//需要排好序
 let s = 10
-maxPoint2(arr,L) {
+function maxPoint2(arr,L) {
 		let left = 0;
 		let right = 0;
 		let N = arr.length;

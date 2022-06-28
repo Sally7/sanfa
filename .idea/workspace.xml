@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab7ff364-ba8b-4157-a52e-77882fff578f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/views/dfs-素数伴侣.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/z.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/岛屿周长.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/排序.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/高位精度计算.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/dp-倒香槟.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/分糖果.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/字符串-最长对称.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/放苹果.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/放苹果.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/正则.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/正则.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/z.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/z.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/放苹果.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/dp-放苹果.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/最长公共子.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/字符串-最长公共子.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/绳子覆盖点数.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/滑动窗口-绳子覆盖点数.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,8 @@
       <workItem from="1656178943784" duration="27168000" />
       <workItem from="1656291959088" duration="6010000" />
       <workItem from="1656308845024" duration="1102000" />
-      <workItem from="1656310126057" duration="17222000" />
+      <workItem from="1656310126057" duration="20336000" />
+      <workItem from="1656378356827" duration="6665000" />
     </task>
     <servers />
   </component>
