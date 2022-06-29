@@ -1,10 +1,10 @@
 let str = '25606 9056 17585 9754 29060 978 3156 9997 13286 3419 18853 5325 1580 292 24811 943 18898 6507 6270 7296 15538 20251 28206 10001 818 3953 993 15744 8489 20700 18853 24969'
 let arr = str.split(' ')
 // arr.sort()
-// let used = new Array(arr1.length).fill([]).map(() => new Array(arr2.length).fill(0))
+
 let arr1 = arr.filter((item)=>{return item%2 ==0})//偶数
 let arr2 = arr.filter((item)=>{return item%2 !=0})
-
+let used = new Array(arr1.length).fill([]).map(() => new Array(arr2.length).fill(0))
 let max = 0
 let k= 0
 let oArr =new Array(arr1.length).fill(0)
@@ -16,29 +16,33 @@ function doSum(arr1,arr2){
         for(let j=0;j<arr2.length;j++){
             let sum = Number(arr1[i])+Number(arr2[j])
             if(isSu(sum)){
-                // used[i][j] =1
+                used[i][j] =1
+                use[j] = 1
                 use.push([i,j])
             }
         }
     }
-    console.log(dp(0,0,oArr,jArr))
+    console.log(use,used)
+    // console.log(dp(0,0,oArr,jArr))
 
 }
-function dp(i,count,oArr,jArr,type){
+function dp(i,count,oArr,jArr){
+    console.log(use.length,arr1.length)
     if(i>=Math.max(use.length,arr1.length)){
         max = Math.max(count,max)
         return max
     }else{
         let o = use[i][0]
         let j = use[i][1]
-        console.log(i,o,j,oArr,jArr)
+        console.log('i:',i,o,j,oArr,jArr)
         let oArr2=[].concat(oArr)
         let jArr2=[].concat(jArr)
         if(!oArr[o]&&!jArr[j]){
             oArr2[o]=1
             jArr2[j]=1
+            dp(i+1,count+1,oArr2,jArr2)
         }
-        return Math.max(dp(i+1,count+1,oArr2,jArr2,),dp(i+1,count,oArr,jArr,))
+        dp(i+1,count,oArr,jArr)
     }
 }
 function isSu(num) {

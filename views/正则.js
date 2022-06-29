@@ -19,3 +19,8 @@ while (len){
 
 console.log(str)
 
+let arr = str.split(' ')
+sum = arr.reduce(function(a,b){
+    return Number(a)+Number(b)
+})
+console.log(sum-Number(arr[0]))

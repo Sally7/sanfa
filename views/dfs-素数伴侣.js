@@ -51,7 +51,7 @@ while(line = readline()){
         let numberArr = arr[1].split(' ').map(i=>parseInt(i));
         let arr1 = numberArr.filter(i=>i % 2 == 0);
         let arr2 = numberArr.filter(i=>i % 2 != 0);
-        let res = getRes(arr1,arr2)
+        getRes(arr1,arr2)
         arr = []
     }
 }
