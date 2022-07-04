@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab7ff364-ba8b-4157-a52e-77882fff578f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/views/字符串翻转.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dfs-素数伴侣.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/dfs-素数伴侣.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/z.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/z.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/正则.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/正则.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/字符串.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/字符串.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/数组字符串的处理.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/数组字符串的处理.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +116,8 @@
       <workItem from="1656310126057" duration="20336000" />
       <workItem from="1656378356827" duration="6665000" />
       <workItem from="1656417354446" duration="995000" />
+      <workItem from="1656655392836" duration="725000" />
+      <workItem from="1656754965888" duration="4867000" />
     </task>
     <servers />
   </component>

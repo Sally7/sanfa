@@ -66,14 +66,16 @@ function pailie(iArr, outStr) {
 	}
 }
 // pailie(arr, '')
-console.log(outList)
+
 
 
 //全组合 字符串
 let data = ['a','b','c'];
 let outlist =[]
 
+// getGroup(data,0,outlist)
 function getGroup(data, index, outlist) {
+	console.log(222222)
 	let arr =[]
 	let cur = data[index]
 	arr.push(cur);
@@ -86,6 +88,7 @@ function getGroup(data, index, outlist) {
 	if(index + 1 >= data.length) return outlist;
 	else return getGroup(data, index + 1, outlist);
 }
+console.log(getGroup(data,0,outlist))
 // ======二维数组去重
 // let aa = [[1, 2], [2, 3], [1, 2]]
 // let obj = {};
@@ -113,7 +116,7 @@ var subsets = function(nums) {
 	}
 	return ans
 };
-subsets([1,2,3])
+// subsets([1,2,3])
 /**
  * @param {number[]} nums
  * @return {number[][]}

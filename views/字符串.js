@@ -20,9 +20,10 @@ function jieya(str) {
             result = result + char
         }
     }
+    console.log(result)
     return result
 }
-
+jieya('2[3[ac]bd]')
 //字符串压缩
 function yasuo(strs) {
     let pre = strs[0];
