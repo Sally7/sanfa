@@ -88,7 +88,7 @@ function getGroup(data, index, outlist) {
 	if(index + 1 >= data.length) return outlist;
 	else return getGroup(data, index + 1, outlist);
 }
-console.log(getGroup(data,0,outlist))
+// console.log(getGroup(data,0,outlist))
 // ======二维数组去重
 // let aa = [[1, 2], [2, 3], [1, 2]]
 // let obj = {};
@@ -98,7 +98,7 @@ console.log(getGroup(data,0,outlist))
 // [[1, 2]
 //  [2, 3]]
 
-// console.log(getGroup(data,0,outlist))
+console.log(getGroup(data,0,outlist))
 // 数组的全组合
 //[
 //   [], [ 1 ],[ 1, 2 ], [ 1, 2, 3 ],[ 1, 3 ], [ 2 ], [ 2, 3 ], [ 3 ]
@@ -114,9 +114,11 @@ var subsets = function(nums) {
 			path.pop()
 		}
 	}
+	console.log(ans)
 	return ans
 };
-// subsets([1,2,3])
+subsets(['a','b','c'])
+
 /**
  * @param {number[]} nums
  * @return {number[][]}

@@ -16,5 +16,4 @@ var characterReplacement = function(s, k) {
     console.log(right, left)
     return right- left
 };
-characterReplacement("AABABBA",
-1)
+characterReplacement("AABABBA", 1)

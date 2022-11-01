@@ -17,7 +17,6 @@ while(info = readline()){
 
     }
 }
-console
 if(arr.length>8){
     newArr= arr.slice(arr.length-8,arr.length)
 }else{

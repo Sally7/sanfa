@@ -7,6 +7,7 @@ let reg = '/^(W|A|S|D){1}\d{1,2}$/' //以WASD开头 后面跟 1-2位数字
 
 //     /(\w)\1+/
 let str='MJLJLbcddcb'
+str.replace(/(\w)\1+/g,'')
 console.log(str.replace(/(\w)\1+/g,''))
 let len = true
 let strLen = str.length

@@ -12,7 +12,6 @@ function doSum(s1,s2,jinzhi){
     }
     let jinwei = 0
     for(let i=len-1;i>=0;i--){
-
         let sum = Number(s1[i])+Number(s2[i])+jinwei
         console.log(str,sum)
         jinwei = 0
@@ -30,4 +29,7 @@ function doSum(s1,s2,jinzhi){
     console.log(str)
 }
 // doSum(s1,s2,10)
+
+let arr = new Array(4).fill([]).map(()=> new Array(5).fill(0))
+console.log(arr)
 
